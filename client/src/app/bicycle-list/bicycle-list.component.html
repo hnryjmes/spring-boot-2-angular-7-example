@@ -1,5 +1,11 @@
-<h2>Bicycle List</h2>
-
-<div *ngFor="let bicycle of bicycles">
-  {{ bicycle.name }}
-</div>
+<mat-card>
+  <mat-card-title>Bicycle List</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let bicycle of bicycles">
+        <img mat-list-avatar src="{{bicycle.giphyUrl}}" alt="{{bicycle.name}}">
+        <h3 mat-line>{{bicycle.name}}</h3>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
