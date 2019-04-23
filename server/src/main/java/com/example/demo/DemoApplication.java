@@ -17,7 +17,7 @@ public class DemoApplication {
     @Bean
     ApplicationRunner init(BicycleRepository repository) {
         return args -> {
-            Stream.of("Trek", "Cannondale", "Colnago", "Boardman", "Peugeot").forEach(name -> {
+            Stream.of("Trek", "Specialized", "Giant", "Scott", "Cannondale", "Bianchi", "Cube", "Pinarello", "Fuji", "Colnago").forEach(name -> {
                 Bicycle bicycle = new Bicycle();
                 bicycle.setName(name);
                 repository.save(bicycle);
